@@ -1,0 +1,182 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./style.css">
+    <link rel="stylesheet" href="./sidebar.css">
+    <link rel="stylesheet" href="./header.css">
+    <link rel="stylesheet" href="./referall.css">
+    <link rel="stylesheet" href="./fontawesome/css/all.min.css">
+    <link rel="stylesheet" href="./fontawesome/css/all.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Public+Sans:wght@100&display=swap" rel="stylesheet">
+    <title>Suman-Test</title>
+</head>
+
+<body>
+    <div class="sidebar">
+        <div class="sidebar-logo">
+            <img src="icons/logo.svg" height="70" width="100">
+        </div>
+        <div class="sidebar-link">
+            <!--   <img src="icons/profile.png" height="42" width="42"> -->
+            <i class="fa-regular fa-user" style="font-size: 20px;"></i>
+            <div>Profile</div>
+            <span><i class="fa-solid fa-angle-down" style="font-size:10px;margin-left:112px;"></i></span>
+        </div>
+        <div class="sidebar-link">
+            <!--<img src="icons/friends.png" height="42" width="42"> -->
+            <i class="fa-solid fa-user-group" style="font-size: 20px;"></i>
+            <div>Friends</div>
+        </div>
+        <div class="sidebar-link">
+            <!--- <img src="icons/friends.png" height="42" width="42"> -->
+            <i class="fa-solid fa-minimize" style="font-size: 20px;"></i>
+            <div>Collabs</div>
+            <span><i class="fa-solid fa-angle-down" style="font-size:10px;margin-left:106px"></i></span>
+        </div>
+        <div class="sidebar-link">
+            <!--- <img src="icons/media.png" height="42" width="42"> -->
+            <i class="fa-solid fa-compact-disc" style="font-size: 20px;"></i>
+            <div>Media</div>
+        </div>
+        <div class="sidebar-link">
+            <!--- <img src="icons/friends.png" height="42" width="42"> -->
+            <i class="fa-solid fa-ticket" style="font-size:20px;"></i>
+            <div>My tickets</div>
+            <i class="fa-solid fa-angle-down" style="font-size:10px;margin-left:90px;"></i>
+        </div>
+        <div class="sidebar-link">
+            <!--- <img src="icons/friends.png" height="42" width="42"> -->
+            <i class="fa-solid fa-handshake-simple" style="font-size:20px;"></i>
+            <div>My RSVPs</div>
+        </div>
+        <div class="sidebar-link">
+            <!--<img src="icons/friends.png" height="42" width="42"> -->
+            <i class="fa-solid fa-file-shield" style="font-size: 20px;"></i>
+            <div>Safespace</div>
+        </div>
+        <div class="sidebar-link">
+            <!--<img src="icons/setting.png" height="42" width="42"> -->
+            <i class="fa-solid fa-gear" style="font-size: 20px;"></i>
+            <div>Settings</div>
+            <span><i class="fa-solid fa-angle-down" style="font-size:10px;margin-left:102px"></i></span>
+        </div>
+        <div class="sidebar-link">
+            <!-- <img src="icons/payments.png" height="42" width="42"> -->
+            <i class="fa-solid fa-credit-card" style="font-size: 20px;"></i>
+            <p  style="color:white;font-size: 14px;font-weight: bold;">Payments</p>
+        </div>
+    </div>
+    <div class="v-line"></div>
+    <main>
+        <div class="header">
+            <div class="notification-icon-container">
+                <img class="notification-icon" src="icons/notifications.svg">
+                <div class="notification-count">2</div>
+            </div>
+            <img class="my-profile-photo" src="icons/my-profile.jpeg">
+            <div class="profile-description">
+                <div style="color:#955bd6; font-weight:bold;">Suman Acharya</div>
+                <div>Personal Profile</div>
+            </div>
+            <i class="fa-solid fa-angle-down" style="font-size:10px;margin-right: 20px;cursor: pointer;"></i>
+        </div>
+        <hr style="height:1px;border-width:0;color:gray;background-color:gray;">
+        <p style="color:white;font-size: 16px;font-weight:900;">Payments</p>
+        <div class="payment">
+            <div class=money>
+                <div style="color:rgb(63, 211, 63); font-size: 12px;">Available credit</div>
+                <strong style="font-size:25px ; font-weight:200px;">$50</strong>
+            </div>
+            <div class="hello"> <button id="withdraw-button">Withdraw</button></div>
+        </div>
+        <div class="transaction">
+            <p style="color:white;font-size: 16px;font-weight:900;">Transaction history</p>
+            <p  style="color:white;font-size: 14px;font-weight: bold; color:rgb(63, 211, 63);cursor: pointer;">See all</p>
+        </div>
+        <table class="content-table">
+            <thead>
+                <tr>
+                    <th>Date and time &nbsp; &#x2193</th>
+                    <th>Transaction details</th>
+                    <th>Status</th>
+                    <th>Amount</th>
+                    <th>Balance</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>Jan 2,8:05 AM EST</td>
+                    <td>Ticket purchase</td>
+                    <td><button class="table-button-success">Success</button></td>
+                    <td>-$10</td>
+                    <td>90</td>
+                </tr>
+                <tr>
+                    <td>Jan 2,8:05 AM EST</td>
+                    <td>Refund</td>
+                    <td><button class="table-button-pending">Pending</button></td>
+                    <td>+$10</td>
+                    <td>90</td>
+                </tr>
+                <tr>
+                    <td>Jan 2,8:05 AM EST</td>
+                    <td>Referral bonus</td>
+                    <td><button class="table-button-success">Success</button></td>
+                    <td>+$5</td>
+                    <td>95</td>
+                </tr>
+                <tr>
+                    <td>Jan 2,8:05 AM EST</td>
+                    <td>Referral bonus</td>
+                    <td><button class="table-button-success">success</button></td>
+                    <td>+$5</td>
+                    <td>100</td>
+                </tr>
+            </tbody>
+        </table>
+        <p style="color:white;font-size: 14px;font-weight: bold;">Billing information</p>
+        <div class="billing-container">
+            <div class=billing-inside-container>
+                <p style="color:grey;">No billing information has been added</p>
+                <button class="billing-button">Add billing information</button>
+            </div>
+        </div>
+        <p   style="color:white;font-size: 14px;font-weight: bold;">Referral</p>
+        <div class="referalll-container">
+            <p class="referalll-link">Referral link</p>
+            <div class="referalll-container-inside">
+                <div class="left-section">
+                    <input class="search-box" type="text" placeholder="https://kiki.com/refid=2233">
+                    <button class="copy-button">Copy <img class="copy-image" src="/icons/copy-solid.svg"></button>
+                    <p style="color:grey; font-size: 12px;">23 users registered with your referall link</p>
+                </div>
+                <div class="middle-section" style="color:grey; font-weight:bold;"> OR</div>
+                <div class="right-section">
+                    <img class="qr-code" src="icons/qr-code.png">
+                    <div class="qr-button">
+                        <p class="share-qr-text" id="manage-qr-text">Share this QR Code</p>
+                        <button class="share-qr-text" id="share-button">Share <i class="fa-solid fa-share-nodes"></i></button>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <hr style="height:1px;border-width:0;color:gray;background-color:gray">
+        <div class="policy-container">
+            <div>
+                <h5 class="underline">Privacy Policy</h5>
+                <h5 class="underline">Terms of Service</h5>
+            </div>
+            <div>
+                <h5 style="color:gray;font-size: 9px;">&#169 2022 Freshfruit,Inc.All Rights Reserved</h5>
+            </div>
+        </div>
+    </main>
+</body>
+
+</html>

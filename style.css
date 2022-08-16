@@ -1,0 +1,121 @@
+body {
+    background-color: #000e28;
+    margin: 0;
+    padding-left: 220px;
+    padding-right: 10px;
+    font-family: 'Public Sans', sans-serif;
+}
+.payment {
+    border: 1px solid black;
+    border-radius: 5px;
+    padding:20px;
+    background-color: #17253d;
+    border-radius: 10px;
+    color:white;
+    display: flex;
+    justify-content:space-between;
+}
+
+.transaction {
+    display: flex;
+    justify-content:space-between   
+}
+
+.content-table {
+    border-collapse: collapse;
+    min-width: 100%;
+    border-radius: 7px 7px 0 0;
+    /* overflow:hidden; */
+    border-left: 1.5px solid #3b4960;
+    border-right: 1.5px solid #3b4960;
+    border-bottom: 2px solid #3b4960;
+    color: white;
+    font-size: 11px;
+}
+
+.content-table thead tr {
+    background-color: #3b4960;
+    color: rgb(211, 197, 197);
+    text-align:left;
+    font-weight:lighter;
+
+}
+
+.content-table th,
+.content-table td {
+    padding: 10px 15px;
+}
+
+.content-table thead tr:first-child{
+    border-radius: 10px;
+}
+
+.billing-container {
+    height:400px;
+    background-color: #17253d;
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 15px;
+}
+
+h5 {
+    display: inline;
+}
+
+.underline {
+    text-decoration: underline;
+    color: gray;
+    font-size: 9px;
+    cursor: pointer;
+}
+
+.policy-container {
+    display: flex;
+    justify-content: space-between;
+}
+
+.table-button-success {
+    width:60px;
+    height:20px;
+    background-color: #00593e;
+    color: white;
+    border-radius: 5px;
+    border: none;
+}
+
+.table-button-pending {
+    width:60px;
+    height:20px;
+    background-color: #794028;
+    color: white;
+    border-radius: 5px;
+    border: none;
+}
+
+#withdraw-button {
+    cursor: pointer;
+    width: 90px;
+    height:35px;
+    border-radius: 8px;
+    background-color: #00ab55;
+    border: none;
+}
+
+.billing-button {
+    cursor: pointer;
+    width: 180px;
+    height:35px;
+    background-color: #00ab55;
+    color: white;
+    border: none;
+    border-radius: 8px;
+    margin-left: 30px;
+}
+
+.v-line {
+    border-left: 1px solid gray;
+    height:238%;
+    left: 200px;
+    position: absolute;
+}

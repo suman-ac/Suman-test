@@ -1,0 +1,102 @@
+.referalll-container {
+    background-color: #17253d;
+    height:230px;
+    margin-bottom: 60px;
+    border-radius: 15px;
+
+}
+
+.referalll-link {
+    color: white;
+    padding-left:25px;
+    padding-top:30px;
+    font-weight: bold;
+    font-size: 15px;
+}
+
+.referalll-container-inside {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    margin-left: 25px;
+
+}
+
+.qr-code {
+    height: 120px;
+    width:120px;
+    color:white;
+    border-radius: 10px;
+}
+
+.right-section {
+    display: flex;
+    
+}
+
+.search-box {
+    width :350px;
+    height: 35px;
+    border-radius: 8px;
+    background-color: #3b4960;
+    border: none;
+}
+.search-box::placeholder {
+    color:rgb(63, 211, 63);
+    padding-left: 15px;
+}
+
+.left-section {
+    position: relative;
+}
+
+.copy-button {
+    cursor: pointer;
+    width: 65px;
+    background-color: #00ab55;
+    border-radius: 5px;
+    color:#1c4362;
+    border: none;
+    margin:-80px;
+    text-align: center;
+    font-weight: bold;
+    font-size:13px;
+}
+
+.copy-image {
+    height:13px;
+    width:13px;
+    padding-top: 2px;
+}
+.right-section {
+    margin-right: 40px;
+    margin-left:-20px;
+}
+
+.qr-button {
+    color:white;
+    padding-left: 20px;
+}
+
+#share-button  {
+    cursor: pointer;
+    width: 70px;
+    background-color: #00ab55;
+    border-radius: 5px;
+    font-weight: bold;
+    font-size:13px;
+    color:#1c4362;
+    border: none;
+    height: 20px;
+
+}
+
+.middle-section {
+    font-size: 14px;
+    padding: 10px;
+
+}
+
+#manage-qr-text {
+    font-size: 12px;
+}
