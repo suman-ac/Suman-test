@@ -20,7 +20,7 @@
 <body>
     <div class="sidebar">
         <div class="sidebar-logo">
-            <img src="icons/logo.svg" height="70" width="100">
+            <img src="icons/logo.png" height="70" width="100">
         </div>
         <div class="sidebar-link">
             <!--   <img src="icons/profile.png" height="42" width="42"> -->
@@ -69,14 +69,14 @@
         <div class="sidebar-link">
             <!-- <img src="icons/payments.png" height="42" width="42"> -->
             <i class="fa-solid fa-credit-card" style="font-size: 20px;"></i>
-            <p  style="color:white;font-size: 14px;font-weight: bold;">Payments</p>
+            <p  class="manage-left-size" style="color:white;font-size: 14px;font-weight: bold;">Payments</p>
         </div>
     </div>
     <div class="v-line"></div>
     <main>
         <div class="header">
             <div class="notification-icon-container">
-                <img class="notification-icon" src="icons/notifications.svg">
+                <svg stroke="currentColor" fill="#fff" stroke-width="0" viewBox="0 0 24 24" height="2em" width="2em" xmlns="http://www.w3.org/2000/svg"><path fill="none" d="M0 0h24v24H0V0z"></path><path d="M12 22c1.1 0 2-.9 2-2h-4c0 1.1.9 2 2 2zm6-6v-5c0-3.07-1.63-5.64-4.5-6.32V4c0-.83-.67-1.5-1.5-1.5s-1.5.67-1.5 1.5v.68C7.64 5.36 6 7.92 6 11v5l-2 2v1h16v-1l-2-2zm-2 1H8v-6c0-2.48 1.51-4.5 4-4.5s4 2.02 4 4.5v6z"></path></svg>
                 <div class="notification-count">2</div>
             </div>
             <img class="my-profile-photo" src="icons/my-profile.jpeg">
@@ -86,8 +86,8 @@
             </div>
             <i class="fa-solid fa-angle-down" style="font-size:10px;margin-right: 20px;cursor: pointer;"></i>
         </div>
-        <hr style="height:1px;border-width:0;color:gray;background-color:gray;">
-        <p style="color:white;font-size: 16px;font-weight:900;">Payments</p>
+        <hr style="height:1px;border-width:0;color:#0d1a33;background-color:#0d1a33;">
+        <p style="color:white;font-size: 16px;font-weight:900;" class="manage-left-size">Payments</p>
         <div class="payment">
             <div class=money>
                 <div style="color:rgb(63, 211, 63); font-size: 12px;">Available credit</div>
@@ -97,9 +97,10 @@
         </div>
         <div class="transaction">
             <p style="color:white;font-size: 16px;font-weight:900;">Transaction history</p>
-            <p  style="color:white;font-size: 14px;font-weight: bold; color:rgb(63, 211, 63);cursor: pointer;">See all</p>
+            <p class="manage-right-side" style="color:white;font-size: 14px;font-weight: bold; color:rgb(63, 211, 63);cursor: pointer;">See all
+            </p>
         </div>
-        <table class="content-table">
+        <table class="content-table" cellspacing="15px">
             <thead>
                 <tr>
                     <th>Date and time &nbsp; &#x2193</th>
@@ -115,39 +116,39 @@
                     <td>Ticket purchase</td>
                     <td><button class="table-button-success">Success</button></td>
                     <td>-$10</td>
-                    <td>90</td>
+                    <td>$90</td>
                 </tr>
                 <tr>
                     <td>Jan 2,8:05 AM EST</td>
                     <td>Refund</td>
                     <td><button class="table-button-pending">Pending</button></td>
                     <td>+$10</td>
-                    <td>90</td>
+                    <td>$90</td>
                 </tr>
                 <tr>
                     <td>Jan 2,8:05 AM EST</td>
                     <td>Referral bonus</td>
                     <td><button class="table-button-success">Success</button></td>
                     <td>+$5</td>
-                    <td>95</td>
+                    <td>$95</td>
                 </tr>
                 <tr>
                     <td>Jan 2,8:05 AM EST</td>
                     <td>Referral bonus</td>
                     <td><button class="table-button-success">success</button></td>
                     <td>+$5</td>
-                    <td>100</td>
+                    <td>$100</td>
                 </tr>
             </tbody>
         </table>
-        <p style="color:white;font-size: 14px;font-weight: bold;">Billing information</p>
+        <p class="manage-left-size" style="color:white;font-size: 14px;font-weight: bold;">Billing information</p>
         <div class="billing-container">
             <div class=billing-inside-container>
                 <p style="color:grey;">No billing information has been added</p>
                 <button class="billing-button">Add billing information</button>
             </div>
         </div>
-        <p   style="color:white;font-size: 14px;font-weight: bold;">Referral</p>
+        <p class="manage-left-size" style="color:white;font-size: 14px;font-weight: bold;">Referral</p>
         <div class="referalll-container">
             <p class="referalll-link">Referral link</p>
             <div class="referalll-container-inside">
@@ -161,19 +162,20 @@
                     <img class="qr-code" src="icons/qr-code.png">
                     <div class="qr-button">
                         <p class="share-qr-text" id="manage-qr-text">Share this QR Code</p>
-                        <button class="share-qr-text" id="share-button">Share <i class="fa-solid fa-share-nodes"></i></button>
+                        <button class="share-qr-text" id="share-button">Share <i
+                                class="fa-solid fa-share-nodes"></i></button>
                     </div>
                 </div>
             </div>
         </div>
-        <hr style="height:1px;border-width:0;color:gray;background-color:gray">
+        <hr style="height:1px;border-width:0;color:#0d1a33;;background-color:#0d1a33;">
         <div class="policy-container">
             <div>
                 <h5 class="underline">Privacy Policy</h5>
                 <h5 class="underline">Terms of Service</h5>
             </div>
             <div>
-                <h5 style="color:gray;font-size: 9px;">&#169 2022 Freshfruit,Inc.All Rights Reserved</h5>
+                <h5 class="manage-right-side" style="color:gray;font-size: 9px;">&#169 2022 Freshfruit,Inc.All Rights Reserved</h5>
             </div>
         </div>
     </main>

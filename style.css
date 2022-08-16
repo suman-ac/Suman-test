@@ -1,9 +1,10 @@
 body {
     background-color: #000e28;
     margin: 0;
-    padding-left: 220px;
-    padding-right: 10px;
+    margin-left: 201px;
+    margin-right: 0px;
     font-family: 'Public Sans', sans-serif;
+    height: 1300px;
 }
 .payment {
     border: 1px solid black;
@@ -14,6 +15,7 @@ body {
     color:white;
     display: flex;
     justify-content:space-between;
+    border: none;
 }
 
 .transaction {
@@ -23,14 +25,15 @@ body {
 
 .content-table {
     border-collapse: collapse;
-    min-width: 100%;
+    width:843px;
     border-radius: 7px 7px 0 0;
-    /* overflow:hidden; */
-    border-left: 1.5px solid #3b4960;
-    border-right: 1.5px solid #3b4960;
-    border-bottom: 2px solid #3b4960;
+  /*   overflow:hidden; */
+    border-left: 1px solid #3b4960;
+    border-right: 1px solid #3b4960;
+    border-bottom: 1px solid #3b4960;
     color: white;
     font-size: 11px;
+    padding-right: 10px;
 }
 
 .content-table thead tr {
@@ -43,8 +46,9 @@ body {
 
 .content-table th,
 .content-table td {
-    padding: 10px 15px;
+    padding: 15px 15px;
 }
+
 
 .content-table thead tr:first-child{
     border-radius: 10px;
@@ -73,6 +77,7 @@ h5 {
 .policy-container {
     display: flex;
     justify-content: space-between;
+    height:50px;
 }
 
 .table-button-success {
@@ -94,6 +99,7 @@ h5 {
 }
 
 #withdraw-button {
+    color:white;
     cursor: pointer;
     width: 90px;
     height:35px;
@@ -114,8 +120,30 @@ h5 {
 }
 
 .v-line {
-    border-left: 1px solid gray;
-    height:238%;
+    border-left: 1px solid #0d1a33;
+    width: 1px;
     left: 200px;
     position: absolute;
+    height: 1325px;
 }
+
+.manage-left-size,
+.payment,
+.transaction,
+.content-table,
+.billing-container,
+.referalll-container,
+.policy-container {
+    margin-left: 15px;
+}
+
+
+.manage-right-side,
+.payment,
+.billing-container,
+.referalll-container,
+.policy-container,
+.content-table {
+    margin-right: 20px;
+}
+
